@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $BOXES
+\*------------------------------------*/
+/**
+ * Extend `.island`.
+ */
+%round-box{
+    border-radius:$brand-round;
+}
+.box{
+    background-color:rgba(0, 0, 0, 0.1);
+    text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25),
+                0  1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.hilite{
+    background-color:#ffc;
+}

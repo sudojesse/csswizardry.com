@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+html,
+body{
+    height:100%;
+}
+html{
+    font-family:"Open Sans", sans-serif;
+    font-weight:400;
+    color:#333;
+    border:0 solid $brand-color;
+    border-top-width:8px;
+    @include linear-gradient(#eee, #fff, #f7f7f7);
+    
+    @include media-query(lap-and-up){
+        border-top-width:0;
+        border-left-width:8px;
+        @include linear-horizontal-gradient(#eee, #fff, #f7f7f7);
+    }
+}
+body{
+    padding-right:$base-spacing-unit;
+    padding-left: $base-spacing-unit;
+    border:0 solid #fff;
+    border-top-width:1px;
+    
+    @include media-query(lap-and-up){
+        border-top-width:0;
+        border-left-width:1px;
+    }
+}
+
+::selection         { background:$brand-color; color:#fff; text-shadow:none; }
+::-moz-selection    { background:$brand-color; color:#fff; text-shadow:none; }
