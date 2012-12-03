@@ -2935,7 +2935,7 @@ html.flexbox {
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  * 
  */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
   .palm-one-whole {
     width: 100%;
   }
@@ -3033,7 +3033,7 @@ html.flexbox {
   }
 }
 /* end palm */
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 721px) and (max-width: 1279px) {
   .lap-one-whole {
     width: 100%;
   }
@@ -3131,7 +3131,7 @@ html.flexbox {
   }
 }
 /* end lap */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1279px) {
   .portable-one-whole {
     width: 100%;
   }
@@ -3229,7 +3229,7 @@ html.flexbox {
   }
 }
 /* end portable */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   .desk-one-whole {
     width: 100%;
   }
@@ -3597,7 +3597,7 @@ html.flexbox {
  */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
-  color: #4a8ec2!important;
+  color: #f43059!important;
 }
 
 .brand-face {
@@ -3606,7 +3606,7 @@ html.flexbox {
 
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important;
+  color: #f43059!important;
 }
 
 /*------------------------------------*\
@@ -3695,3 +3695,121 @@ html.flexbox {
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * Custom mixins on top of inuit.css.
+ */
+/**
+ * A simple top-to-bottom linear gradient with fallback color of our choice.
+ */
+/**
+ * A simple left-to-right linear gradient with fallback color of our choice.
+ */
+/*------------------------------------*\
+    $PAGE
+\*------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #333;
+  border: 0 solid #f43059;
+  border-top-width: 8px;
+  background-color: #f7f7f7;
+  /* Old browsers */
+  background-image: -moz-linear-gradient(top, #eeeeee 0%, white 100%);
+  /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top, #eeeeee 0%, white 100%);
+  /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #eeeeee 0%, white 100%);
+  /* IE10+ */
+  background-image: linear-gradient(to bottom, #eeeeee 0%, white 100%);
+  /* W3C */
+}
+@media only screen and (min-width: 721px) {
+  html {
+    border-top-width: 0;
+    border-left-width: 8px;
+    background-color: #f7f7f7;
+    /* Old browsers */
+    background-image: -moz-linear-gradient(left, #eeeeee 0%, white 100%);
+    /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #eeeeee), color-stop(100%, white));
+    /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(left, #eeeeee 0%, white 100%);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(left, #eeeeee 0%, white 100%);
+    /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(left, #eeeeee 0%, white 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to right, #eeeeee 0%, white 100%);
+    /* W3C */
+  }
+}
+
+body {
+  padding-right: 24px;
+  padding-left: 24px;
+  border: 0 solid #fff;
+  border-top-width: 1px;
+}
+@media only screen and (min-width: 721px) {
+  body {
+    border-top-width: 0;
+    border-left-width: 1px;
+  }
+}
+
+::selection {
+  background: #f43059;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #f43059;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+a {
+  color: #f43059;
+}
+
+/*------------------------------------*\
+    $PAGE-FOOT
+\*------------------------------------*/
+.page-foot {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*------------------------------------*\
+    $BOXES
+\*------------------------------------*/
+/**
+ * Extend `.island`.
+ */
+.box {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.hilite {
+  background-color: #ffc;
+}
