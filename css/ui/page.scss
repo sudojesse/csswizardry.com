@@ -22,12 +22,14 @@ html{
     }
 }
 body{
+    padding-top:  $half-spacing-unit;
     padding-right:$half-spacing-unit;
     padding-left: $half-spacing-unit;
     border:0 solid #fff;
     border-top-width:1px;
     
     @include media-query(lap-and-up){
+        padding-top:  $base-spacing-unit;
         padding-right:$base-spacing-unit;
         padding-left: $base-spacing-unit;
         border-top-width:0;
