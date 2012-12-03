@@ -11,6 +11,7 @@ html{
     color:#333;
     border:0 solid $brand-color;
     border-top-width:8px;
+    background-attachment:fixed;
     @include linear-gradient(#eee, #fff, #f7f7f7);
     
     @include media-query(lap-and-up){

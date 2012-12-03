@@ -3721,6 +3721,7 @@ html {
   color: #333;
   border: 0 solid #f43059;
   border-top-width: 8px;
+  background-attachment: fixed;
   background-color: #f7f7f7;
   /* Old browsers */
   background-image: -moz-linear-gradient(top, #eeeeee 0%, white 100%);
