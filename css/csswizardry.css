@@ -3712,7 +3712,8 @@ html.flexbox {
 \*------------------------------------*/
 html,
 body {
-  height: 100%;
+  height: auto;
+  min-height: auto;
 }
 
 html {
