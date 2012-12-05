@@ -13,12 +13,12 @@ html{
     border:0 solid $brand-color;
     border-top-width:8px;
     background-attachment:fixed;
-    @include linear-gradient(#eee, #fff, #f7f7f7);
+    @include linear-gradient(#f5f5f5, #fff, #f7f7f7);
     
     @include media-query(lap-and-up){
         border-top-width:0;
         border-left-width:8px;
-        @include linear-horizontal-gradient(#eee, #fff, #f7f7f7);
+        @include linear-horizontal-gradient(#f5f5f5, #fff, #f7f7f7);
     }
 }
 body{
